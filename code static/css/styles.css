@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Open+Sans:wght@400;600&display=swap');
+/*위에는 폰트 가져온것*/
+
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "component/logo.css";
+@import "component/screen-header.css";
+@import "component/categoryBtn.css";
+@import "component/basic-btn.css";
+@import "component/nav-bottom.css";
+@import "component/banner.css";
+
+/* Screens */
+@import "screen/preloading.css";
+@import "screen/mainScreen.css";
+
+body{
+    height: 100vh;
+    color: rgba(0, 0, 0, 0.63);
+    font-family:'Open Sans', sans-serif;
+    background-color: var(--main-color);
+}
+
+@media (min-width:720px){
+    body{
+        height: 123vh;
+    }
+}
+@media (min-width:850px){
+    body{
+        height: 230vh;
+    }
+}

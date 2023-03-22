@@ -1,0 +1,21 @@
+.basic-btn > input {
+    color: rgba(0, 0, 0, 0.63);
+    font-family: 'Noto Sans KR';
+    border: none;
+    width: 147px;
+    height: 60px;
+    box-shadow: 1px 2px 3px 1px rgba(182, 182, 182, 0.33);
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 7px 0px;
+}
+
+@media (min-width: 720px) {
+    .basic-btn> input {
+        font-size: 25px;
+        margin: 10px 0px;
+    }
+}

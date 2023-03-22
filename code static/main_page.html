@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Main Page</title>
+        <link rel="stylesheet" type="text/css" href="static/slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="static/slick-1.8.1/slick/slick-theme.css">
+        
+</head>
+<body>
+    <div class="main-body">
+        <!--main header 고정-->
+        <div class="screen-header">
+            <div class="logo screen_header-title">
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="screen-header_btn">
+                <a href=""><img src="img/search.png" alt="search"></a>
+                <a href=""><img src="img/알림.png" alt="announce"></a>
+            </div>
+        </div>
+
+        <!--main content src랑 alt span내부 react props 전달
+            react page 이동 navigator usestate hook
+            -->
+        <div class="main-content">
+            <!--categor btn component-->
+            <div class="content-category">
+                <div>
+                    <div class="category_btn">
+                        <a href="">
+                            <img src="img/매장.png" alt="매장">
+                            <span>가까운 매장</span>
+                        </a>
+                    </div>
+                    <div class="category_btn">
+                        <a href="">
+                            <img src="img/알림 마당.png" alt="알림">
+                            <span>알림 마당</span>
+                        </a>
+                    </div>
+                    <div class="category_btn">
+                        <a href="">
+                            <img src="img/현황.png" alt="기부현황">
+                            <span>기부 현황</span>
+                        </a>
+                    </div>
+                    <div class="category_btn">
+                        <a href="">
+                            <img src="img/기부자.png" alt="지원사업">
+                            <span>지원 사업</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="category_btn">
+                        <a href="">
+                            <img src="img/이용 방법.png" alt="이용방법">
+                            <span>이용 방법</span>
+                        </a>
+                    </div>
+                    <div class="category_btn">
+                        <a href="">
+                            <img src="img/문의하기.png" alt="문의하기">
+                            <span>문의하기</span>
+                        </a>
+                    </div>
+                    <div class="category_btn">
+                        <a href="">
+                            <img src="img/기부거래.png" alt="기부거래">
+                            <span>기부 거래</span>
+                        </a>
+                    </div>
+                    <div class="category_btn">
+                        <a href="">
+                            <img src="img/ai 레시피.png" alt="AI">
+                            <span>AI 레시피</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--나의 기부 현황-->
+            <div class="content-mine_title">
+                <p>마음 온도 올라가는 중 :)</p> 
+            </div>
+            <div class="content-mine">
+                <div class="content-maine_history_btn">
+                    <!--big 부분 1회 부분 useState로 관리 필요
+                    label 부분도 props로 관리 필요. 상황마다 내용 변경
+                    -->
+                    <label>마음이<br/> <big>1회</big>  전달했어요.</label>
+                    <input type="button" />
+                    <span>나의 목록 보러가기</span>
+                </div>
+                <!--basic-btn은 component 재활용 / inpu value 값도 props로 관리 직접 입력으로-->
+                <div class="basic-btn content_mine_btn">
+                    <input type="button" value="기부하기"/>
+                    <input type="button" value="나의 혜택보기"/>
+                </div> 
+            </div>
+            <!--main page banner 그냥 홈페이지 링크로 연결 어때?-->
+            <div class="content-banner">
+                <div class="single-item">
+                    <img src="img/특화사업1.png" alt="">
+                    <img src="img/특화사업2.png" alt="">
+                    <img src="img/특화사업1.png" alt="">
+                  </div>
+            </div>
+        </div>
+
+        <!--bottom navigator-->
+        <!--navigator 버튼도 category button이랑 같은 원리라 재활용 가능 img랑 span 값 넣으면서 할 수 있게끔-->
+        <div class="main-navBottom">
+            <div class="main-navBottom-border">
+                <ul>
+                    <li class="category_btn category_btn-sm"><a href="" >
+                        <img src="img/search.png" alt=""></a>
+                        <span>검색</span>
+                    </li>
+                    <li class="category_btn category_btn-sm"><a href="" >
+                        <img src="img/search.png" alt=""></a>
+                        <span>검색</span>
+                    </li>
+                    <li class="category_btn category_btn-sm"><a href="" >
+                        <img src="img/search.png" alt=""></a>
+                        <span>검색</span>
+                    </li>
+                    <li class="category_btn category_btn-sm"><a href="" >
+                        <img src="img/search.png" alt=""></a>
+                        <span>검색</span>
+                    </li>
+                    <li class="category_btn category_btn-sm"><a href="" >
+                        <img src="img/search.png" alt=""></a>
+                        <span>검색</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+    <script type="text/javascript" src="static/slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.single-item').slick({
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+    </script>
+    <style>
+        .slick-slider > button{
+             display: none;
+        }
+    </style>
+</body>
+</html>
+
+
+
+    
+

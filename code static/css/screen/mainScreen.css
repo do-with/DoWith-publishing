@@ -1,0 +1,164 @@
+.main-content{
+    height:100vh;
+    width: 100%;
+    top:4.3em;
+    position: relative;
+}
+
+.content-category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    height:28%;
+    background-color: white;
+    position: relative;
+}
+.content-category > div {
+    display: flex;
+    justify-content: space-between;
+    margin:15px 13px;
+}
+.content-mine{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.content-mine_title{
+    top: 17px;
+    position: relative;
+    padding-left: 29px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.0em;
+    color: rgba(45, 104, 117, 0.96);
+    height: 2.5%;
+}
+
+.content-maine_history_btn{
+    font-family: 'Noto Sans KR';
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    height: 67%;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 3px 1px rgba(182, 182, 182, 0.33);
+}
+
+.content-maine_history_btn > label{
+    position: absolute;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    line-height: 1.8em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.content-maine_history_btn > span{
+    position: relative;
+    width: 100%;
+    height: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    background: var(--btn-color);
+    color: white;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+}
+
+.content-maine_history_btn > input {
+    border: none;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.content-maine_history_btn > label > big{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+}
+
+.content_mine_btn{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 39%;
+    justify-content: center;
+}
+.content_mine_btn > input{
+    height: 30%;
+    width: 100%;
+}
+.content_mine_btn :nth-child(2n+1) {
+    background-color: var(--donate-btn);
+    color: white;
+}
+
+
+
+
+@media (min-width: 720px){
+    .main-content{
+        top:8em;
+    }
+    .content-maine_history_btn > label{
+        font-size: 1.8em;
+        margin-bottom: 1.5em;
+        line-height: 2em;
+        letter-spacing: 1px;
+    }
+    .content-maine_history_btn > label > big{
+        font-size: 1.3em;
+    }
+    .content-maine_history_btn > span{
+        height: 32%;
+        letter-spacing: 1px;
+        font-size: 1.2em;
+    }
+  
+    .content-mine{
+
+        height: 30%;
+    
+    }
+    .content-mine_title{
+        top: 29px;
+        padding-left: 69px;
+        font-size: 1.8em;
+    }
+    
+}
+@media (min-width: 850px) {
+    .main-content {
+        top: 8em;
+    }
+    .content-category {
+
+        width: 100%;
+        height: 54%;
+    }
+    .content-mine {
+        height: 57%;
+    }
+
+    .content-maine_history_btn > label{
+
+        font-size: 2.5em;
+
+    }
+
+}

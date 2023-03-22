@@ -1,0 +1,48 @@
+.preloading-main{
+    width: 100%;
+    height: 100%;
+}
+.preloading-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloading-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.preloading-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
+}
+.preloading-img > img{
+    width:320px;
+    height:213px;
+    border-radius: 100px;
+}
+.preloading-big{
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--btn-color);
+    
+}
+.preloading-sub{
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.09em;
+}
