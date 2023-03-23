@@ -1,33 +1,48 @@
 .screen-header{
-    width:100%;
-    height: 75px;
+    width: 100%;
+    height: 87px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     position: fixed;
     z-index: 1;
     background-color: var(--main-color);
     border-radius: 15px;
-
 }
+
 .screen-header_btn{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 19%;
     height: auto;
-    margin-left: 61%;
+
 }
 .screen-header_btn > a > img{
     width: 28px;   
     height: 28px;
 }
 .screen_header-title{
-    margin-right:5%;
+    margin-right:15%;
     margin-left: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.screen-header> span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 7%;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;   
+    color: var(--btn-color);
+}
+
 @media (min-width: 720px) {
     .screen-header{
         height: 130px;

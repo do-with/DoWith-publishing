@@ -17,6 +17,7 @@
             <div class="logo screen_header-title">
                 <a href="#"><img src="img/logo.png" alt="logo"></a>
             </div>
+            <span>기부하기</span>
             <div class="screen-header_btn">
                 <a href=""><img src="img/search.png" alt="search"></a>
                 <a href=""><img src="img/알림.png" alt="announce"></a>
@@ -101,49 +102,21 @@
                     <input type="button" value="나의 혜택보기"/>
                 </div> 
             </div>
-            <!--main page banner 그냥 홈페이지 링크로 연결 어때?-->
+            <!--main page banner 그냥 홈페이지 링크로 연결-->
+            <!--main page banner 비어 있는데 a flask랑 연결해서 나중에 넣을 얘정!-->
+            <!--flask로 값 불러와서 아마도 mapping 쓸 것 같음..-->
             <div class="content-banner">
                 <div class="single-item">
-                    <img src="img/특화사업1.png" alt="">
-                    <img src="img/특화사업2.png" alt="">
-                    <img src="img/특화사업1.png" alt="">
+                    <a href=""> 1 </a>
+                    <a href=""> 2 </a>
+                    <a href=""> 3 </a>
                   </div>
-            </div>
-        </div>
-
-        <!--bottom navigator-->
-        <!--navigator 버튼도 category button이랑 같은 원리라 재활용 가능 img랑 span 값 넣으면서 할 수 있게끔-->
-        <div class="main-navBottom">
-            <div class="main-navBottom-border">
-                <ul>
-                    <li class="category_btn category_btn-sm"><a href="" >
-                        <img src="img/search.png" alt=""></a>
-                        <span>검색</span>
-                    </li>
-                    <li class="category_btn category_btn-sm"><a href="" >
-                        <img src="img/search.png" alt=""></a>
-                        <span>검색</span>
-                    </li>
-                    <li class="category_btn category_btn-sm"><a href="" >
-                        <img src="img/search.png" alt=""></a>
-                        <span>검색</span>
-                    </li>
-                    <li class="category_btn category_btn-sm"><a href="" >
-                        <img src="img/search.png" alt=""></a>
-                        <span>검색</span>
-                    </li>
-                    <li class="category_btn category_btn-sm"><a href="" >
-                        <img src="img/search.png" alt=""></a>
-                        <span>검색</span>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
 
-    
+    <!--밑에 내용은 반드시 순서가 지켜져야함..! 그리고 body태그 마지막에 들어가야함..!-->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    
     <script type="text/javascript" src="static/slick-1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -159,6 +132,7 @@
              display: none;
         }
     </style>
+
 </body>
 </html>
 
