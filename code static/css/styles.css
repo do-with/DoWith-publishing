@@ -1,3 +1,5 @@
+/*React native Route한 곳에 이 script만 import해주면 됩니닷!*/
+
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Open+Sans:wght@400;600&display=swap');
 /*위에는 폰트 가져온것*/
 
@@ -7,19 +9,24 @@
 /* Components */
 @import "component/logo.css";
 @import "component/screen-header.css";
-@import "component/categoryBtn.css";
+@import "component/transImgBtn.css";
 @import "component/basic-btn.css";
 @import "component/nav-bottom.css";
 @import "component/banner.css";
+@import "component/loginForm.css";
+@import "component/inputText.css";
+@import "component/inputImgBtn.css";
 
 /* Screens */
 @import "screen/preloading.css";
 @import "screen/mainScreen.css";
+@import "screen/loginScreen.css";
+@import "screen/joinScreen1.css";
 
 body{
     height: 100vh;
     color: rgba(0, 0, 0, 0.63);
-    font-family:'Open Sans', sans-serif;
+    font-family: 'Noto Sans KR';
     background-color: var(--main-color);
 }
 

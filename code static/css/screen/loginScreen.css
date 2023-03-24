@@ -1,0 +1,167 @@
+.login-content{
+    width: 100%;
+    background-color: white;
+    height: 95vh;
+}
+.login-content_sub{
+    display: flex;
+    justify-content: space-around;
+    width: 94%;
+    position: relative;
+    top: 2%;
+    right: 1%;
+}
+.login-content_sub > label{
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 20px;
+}
+.login-content_sub  > a{
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 20px;
+    color: #5F5E5E;
+}
+
+.login-content_sub > label > input{
+    width: 15px;
+    height: 15px;
+}
+
+
+.basic-btn_login-submit{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 13%;
+    height: 12%;
+}
+.basic-btn_login-submit > input{
+    background-color: var(--btn-color);
+    color: white;
+    width: 83%;
+    height: 70%;
+    box-shadow: none;
+    font-size: 13pt;
+    letter-spacing: 4px;
+    font-family: 'Noto Sans KR';
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.basic-btn_join-trans{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    top: 13%;
+    height: 10%;
+    box-sizing: border-box;
+    padding-right: 9%;
+}
+
+.basic-btn_join-trans >input{
+    background: #FFFFFF;
+    border: 1px solid rgba(100, 152, 215, 0.33);
+    box-shadow: 1px 1px 3px rgba(117, 147, 106, 0.2);
+    border-radius: 5px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: var(--btn-color);
+    height: 78%
+}
+
+
+
+
+.api-login{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 13%;
+    height: 19%;
+    box-sizing: border-box;
+}
+.api-login > span{
+    font-family: 'Noto Sans KR';
+}
+.api-login > label {
+    height: 42%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.api-login > label > img {
+    width: 10%;
+    height: 27%;
+    position: absolute;
+    margin-right: 16%;
+    border-radius: 3px;
+    margin-top: 9%;
+}
+.api-login > label > input {
+    background: #FAE100;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-left: 14%;
+    margin-top: 10%;
+    height: 98%;
+    width: 37%;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #3B1E1E;
+    letter-spacing: 0.04em;
+}
+
+
+
+
+@media (min-width: 720px) {
+    .login-content_sub{
+        width: 99%;
+        right: 0%;
+    }
+    .login-content_sub > label{
+        font-size: 21px;
+        line-height: 21px;
+        margin-right: 27%;
+    }
+    .api-login > span{
+        font-size: 20pt;
+    }
+    .api-login > label {
+        height: 37%;
+        width: 90%;
+    }
+    .api-login > label > img {
+        width: 8%;
+        height: 24%;
+        margin-right: 13%;
+        margin-top: 8%;
+    }
+    .api-login > label > input {
+        font-size: 25px;
+    }
+    .login-content_sub  > a{
+        font-size: 21px;
+    }
+}

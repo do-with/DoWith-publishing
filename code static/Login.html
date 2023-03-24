@@ -1,20 +1,67 @@
-.login-body
-    .login-title 
-        .login-content
-            .login-type
-                .login-type_title
-                .login-type_btn 
-                    .login-type_component
-                        .component_img
-                        .span 
-                    .login-type_component
-                        .component_img
-                        .span 
-            .login-form
-                .login-content_input
-                    .input-id_or_pw*2   
-                .login-content_sub
-                    .check
-                    .find-info
-                .login-content_submit
-                .login-content_join-btn  
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Login Page</title>
+</head>
+<body>
+    <div class="login-body">
+        <!--screen header 모든 페이지에 재활용 
+        a가 navigator 즉 path: 이름이고
+        변할 수도 있는 값은 이미지, span 내부값 , alt
+        -->
+        <div class="screen-header">
+            <div class="logo screen_header-title">
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <span>로그인</span>
+            <div class="screen-header_btn">
+                <a href=""><img src="img/search.png" alt="search"></a>
+                <a href=""><img src="img/알림.png" alt="announce"></a>
+            </div>
+        </div>
+
+        <div class="login-content">
+            <!--로그인 폼-->
+            <div class="login-form">
+                <form action="">
+                    <input type="text" name="userid" placeholder="아이디 입력" />
+                    <input type="password" name="userpw" placeholder="비밀번호 입력" />
+
+                    <!--로그인 아래 체크박스-->
+                    <div class="login-content_sub">
+                        <label for="input">
+                            <input type="checkbox" name="자동 로그인" id="autologin">
+                            자동로그인
+                        </label>
+                        <a href="">아이디/비밀번호 찾기</a>
+                    </div>     
+                </form>
+            </div>   
+
+            <!--로그인 버튼 회원가입 버튼
+            basic-btn 제일 기본 btn 계속 재활용함. input 내부 속성이 거의 다 변화함...
+            상황에 맞게 스타일은 class 하나를 더 두고 만듦
+            -->
+            <div class="basic-btn basic-btn_login-submit">
+                <input type="submit" name="login" id="loginBtn" value = "로그인" />
+            </div>
+            <div class="basic-btn basic-btn_join-trans">
+                <input type="button" name="join" id="joinBtn" value = "회원가입" />
+            </div>
+
+            <!--카카오 api 로그인 이 버튼은 옆에 img가 있는 구조로 재활용은 안됨-->
+            <div class="api-login">
+                <span>다른 방법으로 로그인</span>
+                <label class="basic-btn" for="input">
+                    <img src="img/kakao.jpg" alt="카카오">
+                    <input type="button" name="apiLogin" id="apiLoginBtn" value = "카카오" />
+                </label>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

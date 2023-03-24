@@ -22,6 +22,8 @@
     justify-content: space-between;
     margin:15px 13px;
 }
+
+
 .content-mine{
     position: relative;
     width: 100%;
@@ -95,18 +97,18 @@
     color: black;
 }
 
-.content_mine_btn{
+.basic-btn_content-mine{
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 39%;
     justify-content: center;
 }
-.content_mine_btn > input{
+.basic-btn_content-mine> input{
     height: 30%;
     width: 100%;
 }
-.content_mine_btn :nth-child(2n+1) {
+.basic-btn_content-mine :nth-child(2n+1) {
     background-color: var(--donate-btn);
     color: white;
 }

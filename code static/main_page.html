@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="main-body">
-        <!--main header 고정-->
+        <!--main header sceen header 같은 경우에도 component 계속 재활용 예정!-->
         <div class="screen-header">
             <div class="logo screen_header-title">
                 <a href="#"><img src="img/logo.png" alt="logo"></a>
@@ -28,28 +28,31 @@
             react page 이동 navigator usestate hook
             -->
         <div class="main-content">
-            <!--categor btn component-->
+            <!--trans img btn component
+            누르면 이동하는 btn -> 변하는 값 route 경로 , img 사진, alt, span 내부구조
+            이미지가 있는 btn component로 basic-btn과는 완전히 다름 따라서 따로 두고 재활용
+            -->
             <div class="content-category">
                 <div>
-                    <div class="category_btn">
+                    <div class="trans_img-btn">
                         <a href="">
                             <img src="img/매장.png" alt="매장">
                             <span>가까운 매장</span>
                         </a>
                     </div>
-                    <div class="category_btn">
+                    <div class="trans_img-btn">
                         <a href="">
                             <img src="img/알림 마당.png" alt="알림">
                             <span>알림 마당</span>
                         </a>
                     </div>
-                    <div class="category_btn">
+                    <div class="trans_img-btn">
                         <a href="">
                             <img src="img/현황.png" alt="기부현황">
                             <span>기부 현황</span>
                         </a>
                     </div>
-                    <div class="category_btn">
+                    <div class="trans_img-btn">
                         <a href="">
                             <img src="img/기부자.png" alt="지원사업">
                             <span>지원 사업</span>
@@ -57,25 +60,25 @@
                     </div>
                 </div>
                 <div>
-                    <div class="category_btn">
+                    <div class="trans_img-btn">
                         <a href="">
                             <img src="img/이용 방법.png" alt="이용방법">
                             <span>이용 방법</span>
                         </a>
                     </div>
-                    <div class="category_btn">
+                    <div class="trans_img-btn">
                         <a href="">
                             <img src="img/문의하기.png" alt="문의하기">
                             <span>문의하기</span>
                         </a>
                     </div>
-                    <div class="category_btn">
+                    <div class="trans_img-btn">
                         <a href="">
                             <img src="img/기부거래.png" alt="기부거래">
                             <span>기부 거래</span>
                         </a>
                     </div>
-                    <div class="category_btn">
+                    <div class="trans_img-btn">
                         <a href="">
                             <img src="img/ai 레시피.png" alt="AI">
                             <span>AI 레시피</span>
@@ -90,21 +93,23 @@
             <div class="content-mine">
                 <div class="content-maine_history_btn">
                     <!--big 부분 1회 부분 useState로 관리 필요
-                    label 부분도 props로 관리 필요. 상황마다 내용 변경
+                    label 부분도 props로 관리 필요. 수혜자나 기부자 상황마다 내용 변경 
+                    span도 마찬가지..
+                    이 구조의 버튼은 재활용한 UI가 없음!
                     -->
                     <label>마음이<br/> <big>1회</big>  전달했어요.</label>
                     <input type="button" />
                     <span>나의 목록 보러가기</span>
                 </div>
                 <!--basic-btn은 component 재활용 / inpu value 값도 props로 관리 직접 입력으로-->
-                <div class="basic-btn content_mine_btn">
+                <div class="basic-btn basic-btn_content-mine">
                     <input type="button" value="기부하기"/>
                     <input type="button" value="나의 혜택보기"/>
                 </div> 
             </div>
             <!--main page banner 그냥 홈페이지 링크로 연결-->
             <!--main page banner 비어 있는데 a flask랑 연결해서 나중에 넣을 얘정!-->
-            <!--flask로 값 불러와서 아마도 mapping 쓸 것 같음..-->
+            <!--flask로 값 불러와서 아마도 mapping 쓸 것 같음..!-->
             <div class="content-banner">
                 <div class="single-item">
                     <a href=""> 1 </a>

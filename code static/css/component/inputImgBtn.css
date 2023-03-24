@@ -1,0 +1,36 @@
+.input_img-btn {
+    flex-direction: column;
+    color: rgba(95, 94, 94, 0.71);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 84%;
+    align-items: center;
+}
+.input_img-btn >input{
+    width: 89%;
+    height: 92%;
+    border-radius: 10px;
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-shadow: 2px 3px 3px rgba(0, 60, 124, 0.12);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-top: 26%;
+   
+    /* font-style: normal; */
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.15em;
+
+}
+
+
+.input_img-btn >img {
+    position: absolute;
+    width: 9%;
+    height: 22%;
+    margin-bottom: 5%;
+}
