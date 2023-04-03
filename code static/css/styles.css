@@ -16,16 +16,20 @@
 @import "component/loginForm.css";
 @import "component/inputText.css";
 @import "component/inputImgBtn.css";
+@import "component/inputCheckbox.css";
 
 /* Screens */
 @import "screen/preloading.css";
 @import "screen/mainScreen.css";
 @import "screen/loginScreen.css";
 @import "screen/joinScreen1.css";
+@import "screen/csFristPage.css";
+@import "screen/csSecondPage.css";
+@import "screen/csThirdPage.css";
 
 body{
     height: 100vh;
-    color: rgba(0, 0, 0, 0.63);
+    color: rgba(0, 0, 0, 0.66);
     font-family: 'Noto Sans KR';
     background-color: var(--main-color);
 }

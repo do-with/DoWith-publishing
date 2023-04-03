@@ -42,7 +42,7 @@
     height: 12%;
 }
 .basic-btn_login-submit > input{
-    background-color: var(--btn-color);
+    background: linear-gradient(180deg, rgba(45, 76, 137, 0.86) 1.04%, #2D4C89 13.54%, #1B3974 78.65%);
     color: white;
     width: 83%;
     height: 70%;

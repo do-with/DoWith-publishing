@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Customer Service Page</title>
+    </head> 
+    <body>
+        <div class="join-body">
+            <!--screen header 재활용 -->
+            <div class="screen-header">
+                <div class="logo screen_header-title">
+                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <!--screenHeader 만든 컴포넌트부분에서 span 내부 값 부분이 아마도 변하는 값이 될듯합니당!-->
+                <!--tel부분은 html에서 전화 바로거는 속성입니다.-->
+                <span>문의하기</span>
+                <div class="screen-header_btn">
+                    <a href="tel:02-713-1377"><img src="img/search.png" alt="search"></a>
+                    <a href="tel:1688-1377"><img src="img/알림.png" alt="announce"></a>
+                </div>
+            </div>
+
+            <!--문의하기 세번째 페이지 content-->
+            <!--게시판 Component-->
+            <div class="csThirdPage-content">
+                <div class="csBoard">
+                    <div class="Title">
+                        <span>Title</span>
+                        <span>날짜</span>
+                    </div>
+                    <div class="csBoardContent">
+                       <p></p>
+                    </div>
+                </div>
+                <!--댓글 component -->
+                <!--이전에 만든 BoardList component 재활용인데 아마 onClick 효과가 없는 BoardList일듯 싶어용-->
+                <div class="csBoardList csBoardComment">
+                    <ul>
+                        <li>                                
+                            <div class="boardListTitle">
+                                <span>관리자1</span>
+                                <span>날짜</span>
+                            </div>
+                            <div class="boardListsubTitle">
+                                <span>문의 주셔서 감사합니다</span>
+                                <span>답변상태</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

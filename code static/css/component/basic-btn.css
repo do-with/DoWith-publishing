@@ -3,13 +3,31 @@
     border: none;
     width: 147px;
     height: 60px;
-    box-shadow: 1px 2px 2px 1px rgba(182, 182, 182, 0.179);
-    border-radius: 8px;
     background-color: white;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 2px;
     margin: 7px 0px;
+
+    font-family: 'Noto Sans KR';
+    background-blend-mode: soft-light, normal;
+    box-shadow: -3px -3px 10px rgba(250, 251, 255, 0.85), 5px 5px 10px rgba(166, 171, 189, 0.8);
+    border-radius: 10px;
+}
+.btn-sm{
+    width: 64px;
+    height: 30px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--btn-color);
+    border-width: 1px 3px 3px 1px;
+    border-style: solid;
+    border-color: rgba(11, 14, 18, 0.13);
+    box-shadow: 2px 3px 3px rgba(137, 189, 218, 0.2);
+    border-radius: 5px;
 }
 
 

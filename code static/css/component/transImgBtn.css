@@ -17,18 +17,15 @@
 }
 
 .trans_img-btn > a > img{
-    width: 44%;
-    height: 60%;
+    width: 50%;
+    height: 58%;
     
-}
-.content-category >div > .trans_img-btn > a > img{
-    animation: inOut 8s ease-in-out infinite;
 }
 
 .trans_img-btn > a > span{
     font-family: 'Noto Sans KR';
-    margin-top: 8px;
-    font-size: 11pt;
+    margin-top: 9px;
+    font-size: 12pt;
     font-weight: 700;
 }
 

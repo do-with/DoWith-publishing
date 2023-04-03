@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>CS Second Page</title>
+</head>
+<body>
+    <!--Join-body는 흰바탕이면 계속 페이지들에 같은 css 넣으면 될듯이용!-->
+    <div class="join-body">
+        <!--screen header 재활용 -->
+        <div class="screen-header">
+            <div class="logo screen_header-title">
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <!--screenHeader 만든 컴포넌트부분에서 span 내부 값 부분이 아마도 변하는 값이 될듯합니당!-->
+            <!--tel부분은 html에서 전화 바로거는 속성입니다.-->
+            <span>문의하기</span>
+            <div class="screen-header_btn">
+                <a href="tel:02-713-1377"><img src="img/search.png" alt="search"></a>
+                <a href="tel:1688-1377"><img src="img/알림.png" alt="announce"></a>
+            </div>
+        </div>
+
+        <!--문의 게시판 클릭했을때 content-->
+        <div class="csSecondPage-content">
+            <!--이것도 기본은 기존의 basic-btn 버튼 재활용하고
+                 {[style.basicBtn style.페이지마다 조금씩 변경한 요소가 담겨있는 부분]}
+                 근데 CSS는 가장 오른쪽에 있는 속성으로 변경한 부분들이 바뀌는데 
+                 React-native 우선순위를 몰라서 이부분은 아마 좀 찾아봐야할지도 몰라요...!ㅠ
+                -->
+            <!--btn-sm 하나 만들었는데 버튼 컴포넌트 만든곳에서 아마도 style만 바꿔서 넣는 형식일것 같아용!-->
+            <div> 
+                <button class="btn-sm">최신순</button>
+                <button class ="btn-sm btn-sm_white">글쓰기</button>
+            </div>
+
+            <div class="csBoardList">
+                <!--리스트의 네모박스는 계속 재활용 예정!
+                component 만들어 놓고
+                 onClickItem = {(items)=>{
+                    navigate(`/post/${items.id}`);
+                }} 이런 느낌인건가?? 
+                a이랑 Input중 뭘로 쓸지 몰루겠어서.. 일단 뭔가 경로로 불러오는걸로 예상해서
+                a로 만들었음...!
+                이 li 부분은 DB 값을 아마도 mapping? 같은걸로 가져올 부분일 것 같아요!
+                span 내부 값들은 전부 바뀔 값들입니당!
+                -->
+                <ul>
+                    <li>
+                        <a href="">
+                            
+                            <div class="boardListTitle">
+                                <span>Q.검수가 이상해요.... <small>답변완료</small></span>
+                                <span>날짜</span>
+                            </div>
+                            <div class="boardListsubTitle">
+                                <span>윤**</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            
+                            <div class="boardListTitle">
+                                <span>Q.검수가 이상해요.... <small>답변완료</small></span>
+                                <span>날짜</span>
+                            </div>
+                            <div class="boardListsubTitle">
+                                <span>윤**</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    
+</body>
+</html>

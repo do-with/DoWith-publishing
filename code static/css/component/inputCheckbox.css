@@ -1,0 +1,22 @@
+.agree > ul {
+    margin-top: 10px;
+}
+.agree > ul > li {
+    margin-bottom: 15px;
+}
+.agree > ul > li:after {
+    display:block; clear:both; content:"";
+}
+.agree > ul > li > input[type="checkbox"] {display: none;}
+.agree > ul > li > input[type="checkbox"] + label { 
+    width:15px; 
+    height: 15px; 
+    background: white; 
+    cursor: pointer; 
+    border-radius: 3px;
+    float: right;
+    border:1px solid gray;
+    margin-right: 7%;
+}
+.agree > ul > li > input[type="checkbox"]:checked + label {background:url(../../img/check.png) transparent no-repeat center/15px 15px; float: right}
+.agree > ul > li > input[type="checkbox"] + label span {position: absolute; left:7%; display: block; }
