@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
-        <title>Login Page</title>
+        <title>Join Page</title>
 </head>
 <body>
     <div class="join-body">
@@ -16,7 +16,6 @@
             </div>
             <span>회원가입</span>
             <div class="screen-header_btn">
-                <a href=""><img src="img/search.png" alt="search"></a>
                 <a href=""><img src="img/알림.png" alt="announce"></a>
             </div>
         </div>
@@ -27,46 +26,41 @@
             form->submit->DTO ->DAO 이런 느낌인건가?
             -->
             <form action="" method="post">                
-                <div class="check-doner">
-                    <span>* 선택해주세요.</span>
-                    <div class="img-btn_join">
-                        <!--이부분은 페이지가 바뀌는것이 아닌 input형식의 이미지가 있는 버튼 component
-                        변화하는 값 img src , alt , input 내부에 name, id ,value
-                        -->
-                        <div class="input_img-btn">
-                            <img src="img/기부하트.png" alt="기부자img">
-                            <input type="button" name="donor" id="donor" value="기부자">
-                        </div >
-                        <div class="input_img-btn">
-                            <img src="img/수혜자.png" alt="수혜자img">
-                            <input type="button" name="beneficiary" id="donor" value="수혜자">
-                        </div>
-
-
-                    </div>
-                </div>
-                <!--입력란인데 component로 재활용 예정!
-                    뱐하는 값 span 내부
-                    input 내부 값들
+                <!--InputText 이전에 만들어둔 컴포넌트 재활용한 부분!
                 -->
                 <div class="input-text">
-                    <span>이름<small> *</small></span>
-                    <input type="text" name="name" id="name" value="이름 입력(ex 홍길동)"/>
+                    <span>아이디<small> *</small></span>
+                    <input type="text" name="userId" id="userId" placeholder="이메일 입력"/>
                 </div>
-                <!--인증이 필요한 입력란
-                    이 부분은 휴대전화 인증 부분인데 음.. component로 빼야하나? 물어보고 싶음..!
-                -->
-                <div class="phone">
-                    <span>휴대전화 <small>*</small></span>
-                    <div class="phone-form">
-                        <input type="text" class="phone-form_text" value="휴대전화 입력" />
-                        <input type="submit" value="인증하기" />
-                    </div>
-                    <span>기부에 필요한 정보를 수집합니다.</span>
+                <div class="input-text">
+                    <span>비밀번호<small> *</small></span>
+                    <input type="password" name="userpwd" id="userpwd" placeholder="비밀번호"/>
                 </div>
+                <div class="input-text">
+                    <span>비밀번호 확인<small> *</small></span>
+                    <input type="password" name="userpwd" id="userpwd" placeholder="비밀반호 확인"/>
+                </div>
+                <!--체크박스 부분인데 컴포넌트로 만들어야 할 것 같음!-->
+                <div class="agree">
+                    
+                    <ul>
+                        <li><input type="checkbox" id="a2" name="전체동의" />
+                            <label for="a2"><span>이용약관동의 (필수)</span></label>
+                        </li>
+                        
+                        <li><input type="checkbox" id="a3" name="전체동의" />
+                            <label for="a3"><span>개인정보수집이용 동의 (필수)</span></label>
+                        </li>
+                        
+                        <li><input type="checkbox" id="a4" name="전체동의" />
+                            <label for="a4"><span>만 14세 이상 확인 (필수)</span></label>
+                        </li>
+                    </ul>
+                    
+                </div><!-- .agree -->
                 <!--다음으로 넘어가는 버튼-->
-                <div class="basic-btn basic-btn_join-next">
-                    <input type="submit" value="다음">
+                <div class="basic-btn basic-btn_join">
+                    <input type="submit" value="가입하기">
                 </div>
             </form>
         </div>

@@ -1,6 +1,5 @@
 .input_img-btn {
     flex-direction: column;
-    color: rgba(95, 94, 94, 0.71);
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -17,13 +16,14 @@
     border-radius: 10px;
     box-sizing: border-box;
     padding-top: 26%;
-   
+    font-family: 'Noto Sans KR';
     /* font-style: normal; */
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.15em;
+    color: #4d4d4d;
 
 }
 
@@ -31,6 +31,6 @@
 .input_img-btn >img {
     position: absolute;
     width: 9%;
-    height: 22%;
+    height: 30%;
     margin-bottom: 5%;
 }

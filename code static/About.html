@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Login Page</title>
+</head>
+<body>
+    <div class="About-body">
+        <!--screen header 재활용 -->
+        <div class="screen-header">
+            <div class="logo screen_header-title">
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <span>이용방법</span>
+            <div class="screen-header_btn">
+                <a href=""><img src="img/알림.png" alt="announce"></a>
+            </div>
+        </div>
+
+        <!--아마도 div 부분은 view로 전부 감싸야 할지도..ㅠ-->
+        <div class="About-content">
+            <!--기부자인지 수혜자 인지
+                이것도 그 회원가이 페이지 거의 재활용..
+                Check doner 안에 버튼 누르면 AboutDonate가 뿅뿅 바껴야함!
+            -->             
+            <div class="check-doner">
+                <div class="img-btn_join">
+                    <!--이부분은 페이지가 바뀌는것이 아닌 input형식의 이미지가 있는 버튼 component
+                    변화하는 값 img src , alt , input 내부에 name, id ,value
+                    -->
+                    <div class="input_img-btn">
+                        <img src="img/기부자.png" alt="기부자img">
+                        <input type="button" name="donor" id="donor" value="기부자">
+                    </div >
+                    <div class="input_img-btn">
+                        <img src="img/수혜자.png" alt="수혜자img">
+                        <input type="button" name="beneficiary" id="donor" value="수혜자">
+                    </div>
+                </div>
+            </div>
+            <div class="AboutDonate">
+                Img 디비에 넣는 거 확정이용!
+                </section>
+            </div>
+        </div>
+
+    
+</body>
+</html>

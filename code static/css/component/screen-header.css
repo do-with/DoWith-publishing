@@ -11,7 +11,7 @@
 
 .screen-header_btn{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     width: 21%;
     height: auto;

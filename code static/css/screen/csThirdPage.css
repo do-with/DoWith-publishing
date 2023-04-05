@@ -28,13 +28,44 @@
 .csBoardComment{
     width: 100%;
     height: auto;
-    justify-content: center;
-    border: 1px solid #d8d8d8;
+}
+.csBoardComment .boardListTitle{
+    margin-bottom: 6%;
 }
 
 .csBoardComment ul li{
     justify-content: space-evenly;
-    height: 88px;
+    height: 79px;
+    flex-direction: row;
+    border: 1px solid #d8d8d8;
+    
+}
+.csBoardComment ul li img{
+    margin-left: 5%;
+    width: 10%;
+    height: 43%;
+    margin-bottom: 4%;
+}
+.csBoardComment span:nth-of-type(1){
+    margin-left: 2%;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: inherit;
+}
+.csBoardComment span:nth-of-type(2){
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(28, 28, 28, 0.7);
+    margin-top: 0.5%;
+}
+.csBoardComment span small{
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+    margin-bottom: 2.5%;
+    margin-left: 2%;
 }
 
 .Title span:nth-of-type(1){
