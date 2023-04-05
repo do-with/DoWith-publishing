@@ -27,6 +27,7 @@
 @import "screen/csSecondPage.css";
 @import "screen/csThirdPage.css";
 @import "screen/About.css";
+@import "screen/announce.css";
 
 body{
     height: 100vh;

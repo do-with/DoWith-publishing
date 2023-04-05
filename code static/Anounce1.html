@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Announcement Page</title>
+    </head> 
+    <body>
+        <div class="join-body">
+            <!--screen header 재활용 -->
+            <div class="screen-header">
+                <div class="logo screen_header-title">
+                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <!--screenHeader 만든 컴포넌트부분에서 span 내부 값 부분이 아마도 변하는 값이 될듯합니당!-->
+                <!--tel부분은 html에서 전화 바로거는 속성입니다.-->
+                <span>알림마당</span>
+                <div class="screen-header_btn">
+                    <a href="tel:02-713-1377"><img src="img/search.png" alt="search"></a>
+                    <a href="tel:1688-1377"><img src="img/알림.png" alt="announce"></a>
+                </div>
+            </div>
+
+            <!--알림 마당 content-->
+            <!--알림 마당 부분 인데 상단 사진은 고정 버튼으로 화면 조절-->
+            <div class="announce-content">
+                <div class="annonce-imgBackground">
+                    <button>기부소식</button>
+                    <button>공지사항</button>
+                </div>
+
+                <!--블로그 형식으로 보여주는데 아마 재활용될지도...? component -->
+                <div class="content-list_Wrap">
+                    <span>전체글</span>
+                    <div class="content-list">
+                        <div class="list-box">
+                            <div class="content-list_text">
+                                <h3>대표자</h3>
+                                <span>대표자, 과자 외 물품이 아동센터에 전달</span>
+                                <span>날짜</span>
+                            </div>
+                            <div class="content-list_img">
+                                <!--여기는 json: src 들어갈 부분일듯?-->
+                                <img src="https://www.foodbank1377.org/upload/373/202332094549916.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </body>
+</html>

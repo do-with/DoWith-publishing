@@ -1,0 +1,103 @@
+/*CSS 관계가 모두 복잡하게 관련돼 있어서 div 부분은 view...? 해야할지도....*/
+.announce-content{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    top: 13%;
+}
+
+.annonce-imgBackground{
+    position: relative;
+    width: 100%;
+    height: 22%;
+    background:url('../../img/알림마당배경.png');
+    /*background-color: pink;*/
+    display: flex;
+    align-items: flex-end;
+
+}
+.annonce-imgBackground button{
+    display: flex;
+    border-radius: 10px;
+    border: none;
+    width: 30%;
+    height: 28%;
+    background: linear-gradient(180deg, rgba(251, 251, 251, 0.3403) 0%, rgba(251, 251, 251, 0.6391) 31.56%, rgba(255, 255, 255, 0.83) 56.04%);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #383838;
+    line-height: 16px;
+    margin-left: 4%;
+    margin-bottom: 3%;
+}
+
+.content-list_Wrap{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
+.content-list_Wrap > span{
+    display: block;
+    padding: 4%;
+    box-sizing: border-box;
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.content-list{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.list-box{
+    width: 100%;
+    height: 124px;
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+    word-break: break-all;
+}
+
+.content-list_text{
+    width: 61%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 6%;
+}
+.content-list_text h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+.content-list_text span:nth-of-type(1){
+    font-size: 16px;
+    margin-bottom: 4%;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+
+}
+.content-list_text span:nth-of-type(2){
+    font-size: 15px;
+    color: #bababa;
+}
+
+.content-list_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37%;
+}
+.content-list_img img{
+    width: 81%;
+    height: 69%;
+    border-radius: 10px;
+}
