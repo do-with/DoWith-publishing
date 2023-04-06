@@ -28,6 +28,8 @@
 @import "screen/csThirdPage.css";
 @import "screen/About.css";
 @import "screen/announce.css";
+@import "screen/ai.css";
+@import "screen/nearbyStore.css";
 
 body{
     height: 100vh;

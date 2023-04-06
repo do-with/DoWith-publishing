@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>nearbyStore Page</title>
+    </head> 
+    <body>
+        <div class="nearby-body">
+            <!--screen header 재활용 -->
+            <div class="screen-header">
+                <div class="logo screen_header-title">
+                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <!--screenHeader 만든 컴포넌트부분에서 span 내부 값 부분이 아마도 변하는 값이 될듯합니당!-->
+                <!--tel부분은 html에서 전화 바로거는 속성입니다.-->
+                <span>가까운 매장</span>
+                <div class="screen-header_btn">
+                    <a href="tel:1688-1377"><img src="img/알림.png" alt="announce"></a>
+                </div>
+            </div>
+
+            <!--가까운 매장 content 
+            이 부분도 기존의 content랑 조금 달라서 styled 확인해주세용!...!-->
+            <div class="nearby-content">
+                <div class="nearby-imgBackground">
+                    <img src="img/가까운매장배경.png" alt="가까운 매장 icon">
+                    <button>현위치</button>
+                </div>
+
+                <div class="content-list_Wrap content-list_Wrap_ai">
+                    <div class="content-list content-list_ai">
+                        <div class="list-box_img list-box_img_ai">
+                            <div class="content-list_text content-list_text_ai">
+                                <h3>강남구 푸드 뱅크</h3>
+                                <span>310m</span>
+                                <span>02-123-1234</span>
+                            </div>
+                            <div class="content-list_img content-list_img_ai">
+                                <!--여기는 json: src 들어갈 부분일듯?-->
+                                <img src="https://www.foodbank1377.org/upload/373/202332094549916.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </body>
+</html>
