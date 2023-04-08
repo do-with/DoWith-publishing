@@ -1,0 +1,32 @@
+.csBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.Title{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 86%;
+    color: black;
+    margin-top: 7%;
+    margin-bottom: 6%;
+}
+.csBoardContent{
+    width: 86%;
+    margin-bottom: 11%;
+}
+
+.Title span:nth-of-type(1){
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+.Title span:nth-of-type(2){
+    color: gray;
+}
+
+

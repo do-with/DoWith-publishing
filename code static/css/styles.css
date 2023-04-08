@@ -13,10 +13,15 @@
 @import "component/basic-btn.css";
 @import "component/nav-bottom.css";
 @import "component/banner.css";
+@import "component/BoardList.css";
 @import "component/loginForm.css";
 @import "component/inputText.css";
 @import "component/inputImgBtn.css";
 @import "component/inputCheckbox.css";
+@import "component/ItemList.css";
+@import "component/modal.css";
+@import "component/contentList.css";
+@import "component/contentListImg.css";
 
 /* Screens */
 @import "screen/preloading.css";
@@ -30,6 +35,9 @@
 @import "screen/announce.css";
 @import "screen/ai.css";
 @import "screen/nearbyStore.css";
+@import "screen/donateDone.css";
+@import "screen/itemList.css";
+@import "screen/DonateList.css";
 
 body{
     height: 100vh;

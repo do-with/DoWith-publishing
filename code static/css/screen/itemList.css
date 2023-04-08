@@ -1,0 +1,38 @@
+.addressList{
+    position: relative;
+    margin: 2% 6%;
+    background: none;
+    border: none;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #003C7C;
+}
+
+.select-item{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+}
+.modal_body-item {
+    position: absolute;
+    width: 98%;
+    height: 67%;
+    animation: inout 0.7s ease-in-out;
+  }
+
+@keyframes inout {
+  from {
+      height: 0%;
+    }
+  
+    to {
+      height: 67%;
+    }
+  
+}

@@ -1,0 +1,78 @@
+.donateList-body{
+    width: 100%;
+    height: 100vh;
+    /* background-color: white; */
+    word-wrap: break-word;
+}
+
+.csBoardComment-donate{
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: start;
+}
+.ListFilter{
+    position: relative;
+    height: 6%;
+    align-items: center;
+    display: flex;
+    width: 53%;
+    justify-content: space-evenly;
+    margin-left: 3%;
+    margin-top: 1%; 
+}
+.ListFilter button{
+    border: none;
+    background-color: transparent;
+    height: 70%;
+
+}
+.CommentList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.CommentList > button{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    height: 95px;
+    width: 100%;
+    border: 1px solid #D6D6D6;
+    border-radius: 8px;
+    filter: drop-shadow(1.5px 1.5px 0px rgba(112, 112, 112, 0.2));
+    align-items: center;
+}
+.CommentList > button > img{
+    margin-top: 0%;
+    width: 13%;
+    margin-bottom: 4%;
+}
+
+.boardListTitle_donate{
+    width: 100%;
+    height: 77%;
+    display: flex;
+    margin-top: 0%;
+    flex-direction: column;
+}
+.boardListTitle_donate span:nth-of-type(1){
+   margin-left: 0%;
+    justify-content: inherit;
+    margin-top: 4%;
+}
+.boardListTitle_donate span:nth-of-type(2){
+    margin-left: 0px;
+    color: rgba(28, 28, 28, 0.8);
+    margin-top: 1%;
+ }
+ .boardListTitle_donate span > small{
+    margin-bottom: 0%;
+    margin-right: 0%;
+    margin-left: 2%;
+    font-size: 13px;
+    color: gray;
+ }

@@ -9,13 +9,12 @@
 }
 .input-text > span{
     width: 100%;
-    height: 22%;
+    height: 30%;
     box-sizing: border-box;
     position: relative;
     padding-left: 8%;
     padding-top: 1%;
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -31,12 +30,12 @@ span > small{
     box-sizing: border-box;
     position: relative;
     padding-left: 1%;
-    padding-top: 3%;
+    padding-top: 2%;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 15px;
     line-height: 17px;
-    color:  #b7b7b7;
+    color: #b7b7b7;
     border-right: 0px;
     border-left: 0px;
     border-top: 0px;

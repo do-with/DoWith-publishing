@@ -25,9 +25,9 @@
     flex-direction: column;
     align-items: center;
 }
-.About-content .check-doner{
+.check-doner_About{
     height: 15%;
 }
-.About-content .img-btn_join{
+.img-btn_join_About{
     height: 96%;
 }

@@ -30,22 +30,53 @@
                     <button>현위치</button>
                 </div>
 
-                <div class="content-list_Wrap content-list_Wrap_ai">
-                    <div class="content-list content-list_ai">
-                        <div class="list-box_img list-box_img_ai">
-                            <div class="content-list_text content-list_text_ai">
+                <div class="content-list_Wrap content-list_Wrap_api">
+                    <div class="content-list content-list_api">
+                        <div class="list-box_img list-box_img_api">
+                            <div class="content-list_text content-list_text_api">
                                 <h3>강남구 푸드 뱅크</h3>
                                 <span>310m</span>
                                 <span>02-123-1234</span>
                             </div>
-                            <div class="content-list_img content-list_img_ai">
+                            <div class="content-list_img content-list_img_api">
                                 <!--여기는 json: src 들어갈 부분일듯?-->
                                 <img src="https://www.foodbank1377.org/upload/373/202332094549916.jpg" alt=""/>
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div> 
+
             </div>
+
+             <!--버튼 눌렀을 때 모달 창-->
+             <div class="modal">
+                <div class="modal_body">
+                    KAKA0 map
+                    <div class="nearby_address">위치 정보</div>
+                    <div class="nearby_kakaoMap">kakao api</div>
+                </div>
+            </div>
+            <script>
+              const modal = document.querySelector('.modal');
+              const header = document.querySelector('.screen-header');
+              const btnOpenPopup = document.querySelector('.list-box_img_api');
+              const close = document.querySelector('.modal');
+              const body = document.querySelector('.nearby-body');
+        
+              btnOpenPopup.addEventListener('click', () => {
+                modal.style.display = 'block';
+                header.style.background = 'transparent';
+                body.style.overflow = 'hidden';
+              });
+              close.addEventListener('click', () => {
+                modal.style.display = 'none';
+                header.style.background = '#ECF7FF';
+                body.style.overflow = 'auto';
+              });
+
+
+              
+            </script>
         </div>
     </body>
 </html>

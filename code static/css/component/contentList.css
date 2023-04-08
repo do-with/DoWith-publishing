@@ -1,0 +1,22 @@
+.list-box_noImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 113px;
+    border-bottom: 1px solid rgba(214, 214, 214, 0.9);
+}
+.list-box_noImg .content-list_text{
+    padding-left: 0%;
+    width: 88%;
+}
+.list-box_noImg .content-list_text h3{
+    margin-bottom: 2%;
+}
+.list-box_noImg .content-list_text span{
+    font-size: 15px;
+    margin-bottom: 5%;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+}

@@ -6,8 +6,8 @@
 .nearby-content{
     position: relative;
     width: 100%;
-    height: 90vh;
-    top: 12%;
+    height: 88vh;
+    top: 13%;
 }
 .nearby-imgBackground{
     position: relative;
@@ -40,14 +40,14 @@
     bottom: 11px;
 }
 
-.content-list_Wrap_ai{
+.content-list_Wrap_api{
     background: white;
-    height: 99%;
+    height: 75%;
 }
-.content-list_ai{
+.content-list_api{
     align-items: center;
 }
-.list-box_img_ai{
+.list-box_img_api{
     margin-top: 3%;
     background: #FFFFFF;
     border: 1px solid rgba(199, 199, 199, 0.8);
@@ -58,28 +58,40 @@
     word-break: break-all;
 }
 
-.content-list_text_ai h3{
+.content-list_text_api h3{
     font-size: 17px;
     font-weight: 700;
     margin-bottom: 2%;
     color: rgba(35, 35, 35, 0.94);
 }
-.content-list_text_ai span:nth-of-type(1){
+.content-list_text_api span:nth-of-type(1){
     font-size: 16px;
     margin-bottom: 16%;
     line-height: 22px;
     letter-spacing: 0.5px;
     color: rgba(35, 35, 35, 0.56);
 }
-.content-list_text_ai span:nth-of-type(2){
+.content-list_text_api span:nth-of-type(2){
     font-size: 15px;
     color: rgba(35, 35, 35, 0.85);
 }
 
-.content-list_img_ai{
+.content-list_img_api{
     width: 41%;
 }
-.content-list_img_ai img{
+.content-list_img_api img{
     width: 78%;
     height: 75%;
+}
+
+.nearby_address{
+    position: relative;
+    width: 345px;
+    height: 74px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 1px solid #FFFFFF;
+    background: #FEFEFE;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.02), 0px 4px 50px rgba(0, 1, 1, 0.07);
+    border-radius: 24px;
 }

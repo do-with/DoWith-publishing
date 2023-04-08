@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>ItemList Page</title>
+    </head> 
+    <body>
+        <div class="nearby-body">
+            <!--screen header 재활용 -->
+            <div class="screen-header">
+                <div class="logo screen_header-title">
+                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <!--screenHeader 만든 컴포넌트부분에서 span 내부 값 부분이 아마도 변하는 값이 될듯합니당!-->
+                <!--tel부분은 html에서 전화 바로거는 속성입니다.-->
+                <span>물품 확인</span>
+                <div class="screen-header_btn">
+                    <a href="tel:1688-1377"><img src="img/알림.png" alt="announce"></a>
+                </div>
+            </div>
+
+            <!--가까운 매장 content 
+            이 부분도 기존의 content랑 조금 달라서 styled 확인해주세용!...!-->
+            <div class="nearby-content">
+                <button class ="addressList">삼성동 푸드뱅크</button>
+                <!--item list 같은 경우에도 component로 둬야해용!-->
+                <div class="Item-list">
+                    <!--모든 class 와 모든 태그들의 자식 부모관계 유지해주세용!-->
+                    <button class="Item-list_btn">
+                        <div class="Item-list_btn-text">
+                            <span>총 수량 : 3 개</span>
+                            <span>오뚜기 냉장 피자</span>
+                        </div>
+                        <img src="img/화살표버튼.png" alt="">
+                    </button>
+                    <button class="Item-list_btn">
+                        <div class="Item-list_btn-text">
+                            <span>총 수량 : 3 개</span>
+                            <span>오뚜기 냉장 피자</span>
+                        </div>
+                        <img src="img/화살표버튼.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+             <!--버튼 눌렀을 때 모달 창같은 경우에는 component로 만들어 사용해야 해용!-->
+             <div class="modal">
+                <!--이 부분도 그냥 component 가져온거에용! 리스트에서 눌렀을 때
+                그 Component가 그대로 들어갈 수 있도록해야 해용!살짝 어려울자도...-->
+                <div class="select-item">
+                    <button class="Item-list_btn">
+                        <div class="Item-list_btn-text">
+                            <span>총 수량 : 3 개</span>
+                            <span>오뚜기 냉장 피자</span>
+                        </div>
+                        <img src="img/화살표버튼.png" alt="">
+                    </button>
+                </div>
+
+                <div class="modal_body modal_body-item">
+                    
+                    유통기한 별 수량 목록
+                </div>
+            </div>
+            <!-- 이코드는 그냥 자바스크립트이니 아마 RN에도 조금 바꿔서 적용하면 될거에요!
+            여기서는 class 이름으로 불러왔는데 RN에서는 아마도 해당 버튼 눌렀을때,
+            Styled component를 변경한 걸로 style에 들어가는 느낌? 으로 해주시면 될 것 같네용!
+            -->
+            <script>
+              const modal = document.querySelector('.modal');
+              const header = document.querySelector('.screen-header');
+              const btnOpenPopup = document.querySelector('.Item-list_btn');
+              const close = document.querySelector('.modal');
+              const body = document.querySelector('.nearby-body');
+        
+              btnOpenPopup.addEventListener('click', () => {
+                modal.style.display = 'block';
+                header.style.background = 'transparent';
+                body.style.overflow = 'hidden';
+              });
+              close.addEventListener('click', () => {
+                modal.style.display = 'none';
+                header.style.background = '#ECF7FF';
+                body.style.overflow = 'auto';
+              });
+
+
+              
+            </script>
+        </div>
+    </body>
+</html>

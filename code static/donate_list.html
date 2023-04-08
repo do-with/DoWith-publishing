@@ -6,9 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
         <title>Donate List</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 </head>
 <body>
-    <div class="join-body">
+    <div class="donateList-body">
         <!--screen header 재활용 -->
         <div class="screen-header">
             <div class="logo screen_header-title">
@@ -20,40 +21,66 @@
             </div>
         </div>
 
+
         <!--join content-->
         <div class="join-content">
-            <!--리스트 상단에 달과 그래프 들어갈 부분-->
+            <!--리스트 상단에 달과 그래프 들어갈 부분
+            span부분 달마다 바뀔 부분
+        canvas부분은 library 사용한건데 아마 rn 라이브러리 해야할듯해용
+    class 이름 유지 부탁해용!
+    total text span도 DB 내역들에 따라 변화해야함
+
+-->
             <div class="DonateList-Status">
-                <div class="total-visualization"></div>
+                <span>3월</span>
+                <div class="total-visualization">
+                    <canvas id="myChart" width="30" height="30"></canvas>
+                </div>
                 <div class="total-text">
                     <span>3회</span>
                     <span>누적 10 회</span>
                 </div>
             </div>
-            <!--리스트 부분 필터가 될 부분-->
-            <div class="csBoardList csBoardComment">
-                <span>전체글</span>
-                <ul>
-                    <li>
-                        <img src="img/문의댓글.png" />                                
-                        <div class="boardListTitle">
-                            <span>관리자1 <small>날짜</small> </span>
-                            <span>내용 예를 들면 반영했습니다 감사합니다.</span>
+            <!--리스트 부분 필터가 될 부분
+            아마 span에 날짜 부분만 바뀔 것 같음 
+            span은 댓글 단 관리자와 내용이 표시될 것임
+            -->
+            <div class="csBoardList csBoardComment-donate">
+                <div class="ListFilter">
+                    <button>전제</button>
+                    <button>일주일</button>
+                    <button>한달</button>
+                </div>
+                <div class="CommentList">
+                    <button>
+                        <img src="img/기부목록하트.png" />                                
+                        <div class="boardListTitle boardListTitle_donate">
+                            <span>물건 외 <small>날짜</small> </span>
+                            <span>물건이 아동복지센터로 전달됐습니다.</span>
                         </div>
-                    </li>
-                    <li>
-                        <img src="img/문의댓글.png" />                                
-                        <div class="boardListTitle">
-                            <span>관리자1 <small>날짜</small> </span>
-                            <span>내용 예를 들면 반영했습니다 감사합니다.</span>
-                        </div>
-                    </li>
-
-                </ul>
+                    </button>
+                </div>
             </div>
-
-
         </div>
+
+        <script>
+            var ctx = document.getElementById('myChart');
+            var myChart = new Chart(ctx, {
+                type: 'doughnut',
+                    data: {
+                    datasets: [{
+                        data: [40, 60],      // 섭취량, 총급여량 - 섭취량
+                        backgroundColor: [
+                        '#2980BA',
+                        '#FF8282'
+                        ],
+                        borderWidth: 0,
+                        scaleBeginAtZero: true,
+                    }
+                    ]
+                },
+                });
+        </script>
 
     
 </body>

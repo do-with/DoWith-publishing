@@ -1,0 +1,68 @@
+.csBoardList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.csBoardList button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 103px;
+    width: 93%;
+    margin-bottom: 2%;
+    background: #FBFBFB;
+    border: 1px solid #D6D6D6;
+    border-radius: 8px;
+    filter: drop-shadow(1.5px 1.5px 0px rgba(112, 112, 112, 0.23));
+}
+.boardListTitle{
+    width: 100%;
+    height: 28%;
+    display: flex;
+    margin-top: 2%;
+    flex-direction: column;
+}
+.boardListTitle span:nth-of-type(1){
+    margin-left: 6%;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.boardListTitle span:nth-of-type(2){
+    margin-left: 12%;
+    font-size: 15px;
+    font-weight: 400;
+    color: #a0a0a0;
+    display: flex;
+    justify-content: flex-start;
+}
+.boardListsubTitle{
+    width: 100%;
+    height: 28%;
+    display: flex;
+    justify-content: flex-end;
+}
+.boardListsubTitle span{
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: rgba(35, 35, 35, 0.53);
+}
+.boardListsubTitle span:nth-of-type(1){
+    margin-right: 8%;
+}
+.boardListsubTitle span:nth-of-type(2){
+    margin-right: 7%;
+}
+.boardListTitle span small{
+    color: var(--btn-color);
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 2.5%;
+    margin-right: 7%;
+}

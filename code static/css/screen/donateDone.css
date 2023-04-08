@@ -1,0 +1,41 @@
+.done-img{
+    position: relative;
+    width: 57%;
+    height: 25%;
+    background-color: transparent;
+
+}
+.done-img img{
+    border-radius: 10px;
+    width: 95%;
+    height: 99%;
+}
+
+/* + AI-img 바로 다음에 오는 요소(자식 관계 아님)*/
+.AI_subtext + button{
+    background: linear-gradient(180deg, rgba(45, 76, 137, 0.86) 1.04%, #2D4C89 13.54%, #1B3974 78.65%);
+    border-width: 1px 2px 2px 1px;
+    border-style: solid;
+    border-color: rgba(13, 27, 43, 0.35);
+    box-shadow: 2px 3px 3px rgba(117, 147, 106, 0.2);
+    border-radius: 5px;
+    color: white;
+    width: 83%;
+    height: 7%;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 65%;
+}
+
+.done-subtext{
+    margin-top: 0%;
+}
+.done-subtext span:nth-of-type(1){
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+.done-subtext span:nth-of-type(2){
+    color: rgba(35, 35, 35, 0.8);
+}

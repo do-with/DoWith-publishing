@@ -12,81 +12,9 @@
     height: auto;
 }
 
-.csBoardList ul{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.csBoardList ul li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 103px;
-    width: 100%;
-}
-.csBoardList ul li a{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 88%;
-    width: 93%;
-    margin-bottom: 2%;
-    background: #FBFBFB;
-    border: 1px solid #D6D6D6;
-    border-radius: 8px;
-    filter: drop-shadow(1.5px 1.5px 0px rgba(112, 112, 112, 0.23));
-}
-.boardListTitle{
-    width: 100%;
-    height: 28%;
-    display: flex;
-    margin-top: 2%;
-    flex-direction: column;
-}
-.boardListTitle span:nth-of-type(1){
-    margin-left: 6%;
-    font-size: 17px;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-}
-.boardListTitle span:nth-of-type(2){
-    margin-left: 13%;
-    font-size: 15px;
-    font-weight: 400;
-    color: #a0a0a0;
-}
-.boardListsubTitle{
-    width: 100%;
-    height: 28%;
-    display: flex;
-    justify-content: flex-end;
-}
-.boardListsubTitle span{
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    color: rgba(35, 35, 35, 0.53);
-}
-.boardListsubTitle span:nth-of-type(1){
-    margin-right: 8%;
-}
-.boardListsubTitle span:nth-of-type(2){
-    margin-right: 7%;
-}
 
 .btn-sm_white{
     background-color:rgb(255 255 255 / 76%);
     color:black;
 }
 
-.boardListTitle span small{
-    color: var(--btn-color);
-    font-size: 15px;
-    font-weight: 400;
-    margin-bottom: 2.5%;
-    margin-right: 7%;
-}
