@@ -1,133 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Main Page</title>
-        <link rel="stylesheet" type="text/css" href="static/slick-1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="static/slick-1.8.1/slick/slick-theme.css">
-        
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Main Page</title>
+    <link rel="stylesheet" type="text/css" href="static/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="static/slick-1.8.1/slick/slick-theme.css">
+    
 </head>
 <body>
-    <div class="main-body">
-        <!--main header sceen header 같은 경우에도 component 계속 재활용 예정!-->
-        <div class="screen-header">
-            <div class="logo screen_header-title">
-                <a href="#"><img src="img/logo.png" alt="logo"></a>
-            </div>
-            <span>기부하기</span>
-            <div class="screen-header_btn">
-                <a href=""><img src="img/search.png" alt="search"></a>
-                <a href=""><img src="img/알림.png" alt="announce"></a>
-            </div>
+<div class="main-body">
+    <!--main header sceen header 같은 경우에도 component 계속 재활용 예정!-->
+    <div class="screen-header">
+        <div class="logo screen_header-title">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
         </div>
-
-        <!--main content src랑 alt span내부 react props 전달
-            react page 이동 navigator usestate hook
-            -->
-        <div class="main-content">
-            <!--trans img btn component
-            누르면 이동하는 btn -> 변하는 값 route 경로 , img 사진, alt, span 내부구조
-            이미지가 있는 btn component로 basic-btn과는 완전히 다름 따라서 따로 두고 재활용
-            -->
-            <div class="content-category">
-                <div>
-                    <div class="trans_img-btn">
-                        <a href="nearbyStore.html">
-                            <img src="img/가까운매장.png" alt="매장">
-                            <span>가까운 매장</span>
-                        </a>
-                    </div>
-                    <div class="trans_img-btn">
-                        <a href="">
-                            <img src="img/기부소식.png" alt="알림">
-                            <span>알림 마당</span>
-                        </a>
-                    </div>
-                    <div class="trans_img-btn">
-                        <a href="">
-                            <img src="img/기부현황.png" alt="기부현황">
-                            <span>기부 현황</span>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <div class="trans_img-btn">
-                        <a href="">
-                            <img src="img/이용방법.png" alt="이용방법">
-                            <span>이용 방법</span>
-                        </a>
-                    </div>
-                    <div class="trans_img-btn">
-                        <a href="cs.html">
-                            <img src="img/문의하기.png" alt="문의하기">
-                            <span>문의하기</span>
-                        </a>
-                    </div>
-                    <div class="trans_img-btn">
-                        <a href="">
-                            <img src="img/burger 1.png" alt="AI">
-                            <span>AI 레시피</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!--나의 기부 현황-->
-
-            <div class="content-mine">
-                <div class="content-maine_history_btn">
-                    <!--big 부분 1회 부분 useState로 관리 필요
-                    label 부분도 props로 관리 필요. 수혜자나 기부자 상황마다 내용 변경 
-                    span도 마찬가지..
-                    이 구조의 버튼은 재활용한 UI가 없음!
-                    -->
-                    <label>마음이<br/> <big>1회</big>  전달했어요.</label>
-                    <input type="button" />
-                    <span>나의 목록 보러가기</span>
-                </div>
-                <!--basic-btn은 component 재활용 / inpu value 값도 props로 관리 직접 입력으로-->
-                <div class="basic-btn basic-btn_content-mine">
-                    <input type="button" value="간편하게 기부하기" onclick="location.href='../code static/donate1.html'" />
-                    <input type="button" value="나의 혜택보기"/>
-                </div> 
-            </div>
-            <!--main page banner 그냥 홈페이지 링크로 연결-->
-            <!--main page banner 비어 있는데 a flask랑 연결해서 나중에 넣을 얘정!-->
-            <!--flask로 값 불러와서 아마도 mapping 쓸 것 같음..!-->
-            <div class="content-banner">
-                <div class="single-item">
-                    <a href=""> 1 </a>
-                    <a href=""> 2 </a>
-                    <a href=""> 3 </a>
-                  </div>
-            </div>
+        <span>DoWith</span>
+        <div class="screen-header_btn">
+            <a href=""><img src="img/search.png" alt="search"></a>
+            <a href=""><img src="img/알림.png" alt="announce"></a>
         </div>
     </div>
+    <div class="main-content">
+        <div class="mainContentTotalDonor">
+            <div class="highlightSentence">
+                <span>" 많은 사람들이 푸드뱅크 기부에 참여하고 있어요 "</span>
+                <div class="hightBlock"></div>
+            </div>
+            <!--span은 관리해야하는 계속 변하는 값입니당!-->
+            <span class="totalDonorCount">102,356명</span>
 
-    <!--밑에 내용은 반드시 순서가 지켜져야함..! 그리고 body태그 마지막에 들어가야함..!-->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="static/slick-1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.single-item').slick({
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 3000,
-            });
-        });
-    </script>
-    <style>
-        .slick-slider > button{
-             display: none;
-        }
-    </style>
+        </div>
 
-</body>
-</html>
+        <div class="content-category">
+            <div>
+                <div class="trans_img-btn">
+                    <a href="nearbyStore.html">
+                        <img src="img/가까운매장.png" alt="매장">
+                        <span>가까운 매장</span>
+                    </a>
+                </div>
+                <div class="trans_img-btn">
+                    <a href="">
+                        <img src="img/기부소식.png" alt="알림">
+                        <span>알림 마당</span>
+                    </a>
+                </div>
+                <div class="trans_img-btn">
+                    <a href="">
+                        <img src="img/기부현황.png" alt="기부현황">
+                        <span>기부 현황</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="trans_img-btn">
+                    <a href="">
+                        <img src="img/이용방법.png" alt="이용방법">
+                        <span>이용 방법</span>
+                    </a>
+                </div>
+                <div class="trans_img-btn">
+                    <a href="cs.html">
+                        <img src="img/문의하기.png" alt="문의하기">
+                        <span>문의하기</span>
+                    </a>
+                </div>
+                <div class="trans_img-btn">
+                    <a href="">
+                        <img src="img/burger 1.png" alt="AI">
+                        <span>후원하기</span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
+        <!--어쨌든 반복 요소라 button은 component로 가볼께여~-->
+        <div class="mainFunctionBtn">
+            <button class="main-btn localTradeBtn" >
+                <span>우리 동네</span>
+                <span>지역 거래</span>
+                <img src="img/기부거래 1.png">
+            </button>
+            <button class="main-btn registerDonate">
+                <span>5분 만에</span>
+                <span>기부 접수</span>
+                <img src="img/image 18.png">
+            </button>
+        </div>
+        
+        <!--토큰 기부하기 부분-->
+        <div class = "tokenDonate">
+            <button class="lightblueBtn">포인트 기부하기</button>
+        </div>
 
+    </div>
+</div>
 
-    
+<!--밑에 내용은 반드시 순서가 지켜져야함..! 그리고 body태그 마지막에 들어가야함..!-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="static/slick-1.8.1/slick/slick.min.js"></script>
 
+</body></html>

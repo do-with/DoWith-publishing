@@ -3,21 +3,107 @@
     width: 100%;
     top: 6em;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.main-body > .screen-header > span{
-    color: transparent;
+.main-btn{
+    box-sizing: border-box;
+    width: 44%;
+    height: 90%;
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0.7) 105.18%), white;
+    background-blend-mode: soft-light, normal;
+    box-shadow: 5px 4px 10px rgba(166, 171, 189, 0.51);
+    border-radius: 10px;
+    border: none;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    color: #646464;
+}
+.main-btn > span{
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+
+}
+.localTradeBtn{
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0.7) 105.18%), #2A93BF;
+    color: white;
+}
+.mainFunctionBtn{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 28%;
+}
+.main-btn > img{
+    width: 62px;
+    height: 57px;
+    margin-top: 14%;
+    margin-left: 24%;
 }
 
+/*main page 1번째 단락*/
+.mainContentTotalDonor{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.highlightSentence{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    height: 30%;
+    box-sizing: border-box;
+}
+.highlightSentence > span{
+    position: absolute;
+    z-index: 1;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    color: #181818;
+}
+.totalDonorCount{
+    display: flex;
+    justify-content: center;
+    margin-top: 9px;
+    font-size: 15pt;
+    font-weight: 600;
+    color: black;
+}
+.hightBlock{
+    position: relative;
+    width: 86%;
+    height: 18px;
+    display: flex;
+    background-color: rgba(178, 213, 255,0.83);
+    z-index: 0;
+    margin-top: 14px;
+}
+
+/*두번째 카테고리 단락*/
 .content-category{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 32%;
+    width: 94%;
+    height: 33%;
     position: relative;
     background: rgba(255, 255, 255, 0.55);
     box-shadow: 1px 2px 4px rgba(70, 70, 70, 0.2);
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 10px;
+    margin-top: 3%;
 }
 .content-category > div {
     display: flex;
@@ -26,115 +112,36 @@
     margin: 9px 14px;
 }
 
-
-.content-mine{
-    position: relative;
+/*세번째 단락*/
+.tokenDonate{
     width: 100%;
-    height: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-
-.content-maine_history_btn{
-    font-family: 'Noto Sans KR';
-    display: flex;
-    flex-direction: column;
-    width: 42%;
-    height: 66%;
-    box-sizing: border-box;
-    background-color: white;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 2px 3px 1px rgba(182, 182, 182, 0.33);
-}
-
-.content-maine_history_btn > label{
-    position: absolute;
-    font-size: 1em;
-    margin-bottom: 1.5em;
-    line-height: 1.8em;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-}
-
-.content-maine_history_btn > span{
-    position: relative;
-    width: 100%;
-    height: 27%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0px 0px 10px 10px;
-    background: var(--btn-color);
-    color: white;
-    letter-spacing: 1px;
-    font-size: 0.8em;
+    margin-top: 3%;
 }
-
-.content-maine_history_btn > input {
+.lightblueBtn{
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.54) 0%, rgba(255, 255, 255, 0.54) 105.18%), #D7EEFF;
+    background-blend-mode: soft-light, normal;
+    box-shadow: -5px -5px 10px rgba(250, 251, 255, 0.85);
+    border-radius: 5px;
+    width: 91%;
+    height: 81%;
     border: none;
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-
-.content-maine_history_btn > label > big{
-    font-size: 1.3em;
-    font-weight: bold;
-    color: black;
-}
-
-.basic-btn_content-mine{
-    display: flex;
-    flex-direction: column;
-    height: 97%;
-    width: 40%;
-    justify-content: center;
-}
-.basic-btn_content-mine> input{
-    height: 30%;
-    width: 100%;
-}
-.basic-btn_content-mine :nth-child(2n+1) {
-    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0.7) 105.18%), #2A93BF;
-    color: white;
     font-family: 'Noto Sans KR';
-    font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.055em;
+    color: #050505;
 }
-
 
 
 
 @media (min-width: 720px){
     .main-content{
         top:8em;
-    }
-    .content-maine_history_btn > label{
-        font-size: 1.8em;
-        margin-bottom: 1.5em;
-        line-height: 2em;
-        letter-spacing: 1px;
-    }
-    .content-maine_history_btn > label > big{
-        font-size: 1.3em;
-    }
-    .content-maine_history_btn > span{
-        height: 32%;
-        letter-spacing: 1px;
-        font-size: 1.2em;
-    }
-  
-    .content-mine{
-
-        height: 30%;
-    
     }
     
 }
@@ -147,14 +154,4 @@
         width: 100%;
         height: 54%;
     }
-    .content-mine {
-        height: 57%;
-    }
-
-    .content-maine_history_btn > label{
-
-        font-size: 2.5em;
-
-    }
-
 }
