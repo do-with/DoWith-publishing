@@ -26,14 +26,15 @@ span > small{
 
 .input-text > input{
     width: 86%;
-    height: 57%;
+    height: 68%;
     box-sizing: border-box;
+    background: transparent;
     position: relative;
     padding-left: 1%;
     padding-top: 2%;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14.5px;
     line-height: 17px;
     color: #b7b7b7;
     border-right: 0px;
