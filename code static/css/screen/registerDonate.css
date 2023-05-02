@@ -1,0 +1,104 @@
+.registerBody{
+    width: 100%;
+    height: 100vh;
+    background-color: #ECF7FF;
+    word-wrap: break-word;
+}
+.personalizeText{
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #2D4C89;
+    margin-left: 8%;
+}
+
+.registerBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registerDonate1{
+    background: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    box-shadow: 2px 3px 3px rgba(139, 139, 139, 0.16);
+    border-radius: 8px;
+    width: 91%;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 3%;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 5%;
+}
+.registerDonate1 .input-text{
+    width: 100%;
+    height: 29%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.donateItemPicture span:nth-of-type(1){
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #DE4444;
+}
+.registerDonate1 > span{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #959393;
+    width: 86%;
+    margin-top: 1px;
+}
+.donateItemPicture{
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+    height: 88px;
+    margin-top: 2%;
+}
+.donateItemPicture > button{
+    width: 100%;
+    height: 60%;
+    border: 1px solid rgba(13, 27, 43, 0.35);
+    border-radius: 5px;
+    background: white;
+    margin-top: 4%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: #3D3D3D;
+}
+.registerBtn{
+    height: 16%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    box-sizing: border-box;
+}
+.registerBtnNext{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 16px 17px;
+    font-family: 'Noto Sans KR';
+    background-blend-mode: soft-light, normal;
+    box-shadow: -3px -3px 10px rgba(250, 251, 255, 0.85), 5px 5px 10px rgba(166, 171, 189, 0.8);
+    border-radius: 10px;
+    color: white;
+    width: 36%;
+    height: 51%;
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0.7) 105.18%), #284784;
+}
