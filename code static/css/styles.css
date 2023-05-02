@@ -39,6 +39,7 @@
 @import "screen/itemList.css";
 @import "screen/DonateList.css";
 @import "screen/registerDonate.css";
+@import "screen/chargeMoney.css";
 
 body{
     height: 100vh;

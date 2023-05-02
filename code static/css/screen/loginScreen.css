@@ -40,11 +40,12 @@
     align-items: center;
     top: 13%;
     height: 12%;
+    width: 100%;
 }
 .basic-btn_login-submit > input{
     background: linear-gradient(180deg, rgba(45, 76, 137, 0.86) 1.04%, #2D4C89 13.54%, #1B3974 78.65%);
     color: white;
-    width: 83%;
+    width: 86%;
     height: 70%;
     box-shadow: none;
     font-size: 13pt;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>포인트 바꾸기 Page</title>
+</head>
+<body>
+    <div class="join-body">
+        <!--screen header 재활용 -->
+        <div class="screen-header">
+            <div class="logo screen_header-title">
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <span>변환하기</span>
+            <div class="screen-header_btn">
+
+                <a href=""><img src="img/알림.png" alt="announce"></a>
+            </div>
+        </div>
+
+        <!--join content-->
+        <div class="join-content">
+            <!--기부자인지 수혜자 인지
+            form->submit->DTO ->DAO 이런 느낌인건가?
+            -->
+            <form class="joinInputText" action="" method="post"> 
+                <div class="input-text">
+                    <span>포인트로 변환할 금액<small> *</small></span>
+                    <input type="text" name="userId" id="userId" placeholder="충전할 금액에서 기부할 금액을 입력해주세요"/>
+                </div>
+                <div class="basic-btn basic-btn_login-submit basic-btn_charge-submit">
+                    <input type="submit" name="login" id="loginBtn" value = "변환하기" />
+                </div>
+                <span class="changePointSpan">포인트로 전환한 이후에는 돈으로 바꿀 수 없습니다.
+                    신중하게 기부 할 금액을 입력해주세요</span>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

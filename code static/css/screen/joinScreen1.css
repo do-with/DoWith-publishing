@@ -16,6 +16,13 @@
     width: 100%;
     position: relative;
     top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.joinInputText .input-text{
+    margin-bottom: 2%;
+    height: 11%;
 }
 .check-doner{
     width: 100%;
@@ -108,9 +115,11 @@
     height: 15%;
     display: flex;
     justify-content: end;
-    right: 6%;
     position: relative;
-    margin-top: 7%;   
+    margin-top: 7%;
+    box-sizing: border-box;
+    padding-right: 7%;
+    background: white;
 }
 
 
@@ -139,3 +148,32 @@
 
 }
 
+.born{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+    margin-top:3%;
+}
+.born > span {
+    width: 100%;
+    height: 22%;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 8%;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+}
+.born-form_text {
+    width: 90%;
+    height: 98%;
+    background: rgba(245, 245, 245, 0.52);
+    border: 1px solid #A3A2A2;
+    border-radius: 5px;
+    color: #ABABAB;
+    box-sizing: border-box;
+    padding-left: 4%;
+    font-size: 11pt;
+}

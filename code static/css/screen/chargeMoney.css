@@ -1,0 +1,26 @@
+.basic-btn_charge-submit{
+    top: 0%;
+}
+.chargeSpan{
+    width: 100%;
+    height: 2%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 8%;
+}
+.changePointSpan{
+    width: 92%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 4%;
+    color: #CA0000;;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+}

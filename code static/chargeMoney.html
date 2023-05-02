@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>충전하기 Page</title>
+</head>
+<body>
+    <div class="join-body">
+        <!--screen header 재활용 -->
+        <div class="screen-header">
+            <div class="logo screen_header-title">
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <span>충전하기</span>
+            <div class="screen-header_btn">
+
+                <a href=""><img src="img/알림.png" alt="announce"></a>
+            </div>
+        </div>
+
+        <!--join content-->
+        <div class="join-content">
+            <!--기부자인지 수혜자 인지
+            form->submit->DTO ->DAO 이런 느낌인건가?
+            -->
+            <form class="joinInputText" action="" method="post"> 
+                <div class="input-text">
+                    <span>충전 금액<small> *</small></span>
+                    <input type="text" name="userId" id="userId" placeholder="충전 금액을 입력하세요"/>
+                </div>
+                <div class="basic-btn basic-btn_login-submit basic-btn_charge-submit">
+                    <input type="submit" name="login" id="loginBtn" value = "충전하기" />
+                </div>
+                <span class="chargeSpan">충전하시는 금액은 포인트로 전환이 가능합니다</span>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
